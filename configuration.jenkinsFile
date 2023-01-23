@@ -23,12 +23,12 @@ pipeline {
        script {
                 allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: './allure-results/']]
          }
-      }
-      always{
+       script {
             mail to: 'ajithviswanathan02@gmail.com',
                  cc : 'ajith.v@qburst.com'
                 subject: "SUCCESSFUL", 
-                body: "Build Successful"
-        }
+                body: "Build Successful"       
+       }
+      }
    } 
 }
