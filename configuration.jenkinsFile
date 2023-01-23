@@ -24,5 +24,11 @@ pipeline {
                 allure includeProperties: false, jdk: '', report: 'allure-report', results: [[path: './allure-results/']]
          }
       }
+      success{
+            mail to: 'ajithviswanathan02@gmail.com',
+                 cc : 'ajith.v@qburst.com'
+                subject: "SUCCESSFUL", 
+                body: "Build Successful"
+        }
    } 
 }
