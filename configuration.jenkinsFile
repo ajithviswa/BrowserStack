@@ -25,7 +25,7 @@ pipeline {
          }
        script {
             mail to: 'ajithviswanathan02@gmail.com',
-                 cc : 'ajith.v@qburst.com'
+                 cc : 'ajith.v@qburst.com',
                 subject: "SUCCESSFUL", 
                 body: "Build Successful"       
        }
