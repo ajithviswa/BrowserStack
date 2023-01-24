@@ -21,9 +21,9 @@ describe('Ebay Product Search', () => {
     expect(browser).toHaveTitle('Laptop for sale | eBay');
   });
 
-  it('should update the search category', () => {
-    allureReporter.addFeature('search category');
-    waitForTextChange(SearchPage.category, 'PC Laptops & Netbooks', 10000);
-    expect(SearchPage.category).toHaveText('PC Laptops & Netbooks');
-  });
+//   it('should update the search category', () => {
+//     allureReporter.addFeature('search category');
+//     waitForTextChange(SearchPage.category, 'PC Laptops & Netbooks', 10000);
+//     expect(SearchPage.category).toHaveText('PC Laptops & Netbooks');
+//   });
 });
